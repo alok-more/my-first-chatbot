@@ -29,5 +29,5 @@ It allows users to **upload a PDF**, **ask questions** about its content, and re
 
 ### 1. Clone the Repository
 ```bash
-git clone 
+git clone https://github.com/alok-more/my-first-chatbot.git
 cd gemini-pdf-chatbot
