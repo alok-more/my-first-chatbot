@@ -8,7 +8,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 # Your Google Gemini API key
-GOOGLE_API_KEY = "YOUR GOOGLE GEMINI API KEY"
+GOOGLE_API_KEY = ""
 
 # Configure Gemini
 genai.configure(api_key=GOOGLE_API_KEY)

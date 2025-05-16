@@ -6,28 +6,45 @@ It allows users to **upload a PDF**, **ask questions** about its content, and re
 ---
 
 ## 🚀 Features
-- Upload a **PDF document**.
-- Automatically **extract and split** PDF text into manageable chunks.
-- **Embed** text using **Google Generative AI Embeddings** (`embedding-001` model).
-- Perform **semantic similarity search** using **FAISS**.
-- Ask **questions** and get **answers** from **Gemini 2.0 Flash** model.
-- Fast, lightweight, and easy to use with **Streamlit UI**.
+
+- Upload a **PDF document**
+- Automatically **extract and split** PDF text into manageable chunks
+- **Embed** text using **Google Generative AI Embeddings** (`embedding-001` model)
+- Perform **semantic similarity search** using **FAISS**
+- Ask **questions** and get **answers** from **Gemini 2.0 Flash** model
+- Fast, lightweight, and easy to use with **Streamlit UI**
 
 ---
 
 ## 🛠️ Tech Stack
+
 - **Python**
 - **Streamlit** – for web UI
-- **Google Generative AI** (`google.generativeai`, `langchain_google_genai`) – for embeddings and chatbot responses
-- **FAISS** – for vector storage and similarity search
-- **PyPDF2** – for reading PDF content
-- **LangChain** – for chaining LLM calls
+- **Google Generative AI**  
+  - `google-generativeai` – for API access  
+  - `langchain-google-genai` – for LLM + Embedding integrations  
+- **LangChain** – for chaining LLM tasks  
+- **FAISS** – for vector database and similarity search  
+- **PyPDF2** – for extracting PDF text  
 
 ---
 
 ## 📋 Setup Instructions
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/alok-more/my-first-chatbot.git
 cd my-first-chatbot
+pip install -r requirements.txt
+
+```
+### 2. Add Your Gemini API Key
+```bash
+GOOGLE_API_KEY = "YOUR GOOGLE GEMINI API KEY"
+```
+
+### 3. Run the app
+```bash
+streamlit run app.py
+```
