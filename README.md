@@ -46,5 +46,5 @@ GOOGLE_API_KEY = "YOUR GOOGLE GEMINI API KEY"
 
 ### 3. Run the app
 ```bash
-streamlit run app.py
+streamlit run chatbot.py
 ```
